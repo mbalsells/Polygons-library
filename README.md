@@ -23,7 +23,81 @@ This structure has been thought to make things easier for the user and have ever
    
 # Commands
 
-Aside from all the commands that our calculator has by default, that is, the ones explained in the description of this assignment, I implemented three more commands:
+The commands that have been implemented follow:
+
+### The `polygon` command
+The `polygon` command associates an identifier with a convex polygon made by a
+set of zero or more points. If the polygon identifier is new, it will create
+it. If it already existed, it will overwrite the previous polygon. New
+polygons are black.
+
+
+### The `print` command
+The `print` command prints the name and the vertices of a vertices of a given
+polygon. The output must only contain the vertices in the convex hull of the
+polygon, in clockwise order, starting from the vertex will lower X (and the
+vertex with lower Y in case of ties). They must be printed in a single line,
+with one space separating each value.
+
+
+### The `area` command
+The `area` command prints the area of the given polygon.
+
+### The `perimeter` command
+The `perimeter` command prints the perimeter of the given polygon.
+
+### The `vertices` command
+The `vertices` command prints the number of vertices of the convex hull of the
+given polygon.
+
+
+### The `centroid` command
+The `centroid` command prints the centroid of the given polygon.
+
+### The `list` command
+The `list` command lists all polygon identifiers, lexycographically sorted.
+
+### The `save` command
+The `save` command saves the given polygons in a file, overwriting it if it
+already existed. The contents of the file must be the same as in the `print`
+command, with a polygon per line.
+
+### The `load` command
+The `load` command loads the polygons stored in a file, in the same way as
+`polygon`, but retrieving the vertices and identifiers from the file.
+
+### The `setcol` command
+The `setcol` command associates a color to the given polygon.
+
+### The `draw` command
+The `draw` command draws a list of polygons in a PNG file, each one with its
+associated color. The image should be of 500x500 pixels, with white background
+and the coordinates of the vertices should be scaled to fit in the 498x498
+central part of the image, while preserving the original aspect ratio.
+
+
+### The `intersection` command
+This command may receive two or three parameters:
+
+- When receiving two parameters `p1`and `p2`, `p1`should be updated to the
+- intersection of the original `p1` and `p2`.
+
+- When receiving three parameters `p1`, `p2` and `p3`, `p1`should be updated
+- to the intersection of `p2` and `p3`.
+
+Take into account that identifiers may be repeated.
+
+
+### The `union` command
+Just as the `intersection` command, but with the convex union of polygons.
+
+### The `inside` command
+Given two polygons, the `inside` command prints `yes` or `not` to tell whether
+the first is inside the second or not.
+
+### The `bbox` command
+The `bbox` command creates a new polygon with the four vertices corresponding to the
+bounding box of the given polygons.
 
 ### The `fulldraw` command
 The `fulldraw` command works exactly as the `draw` command, the only difference is that the polygons that are drawn are completely filled. To use it you must put the name of the command, the name of the file where you want to store the images and a set of polygons that are to be drawn.
