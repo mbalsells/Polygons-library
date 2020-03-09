@@ -1,0 +1,14 @@
+load p4.txt
+load p4mov.txt
+load p4rot.txt
+setcol p4 1 0 0
+setcol p4mov 0 0 1
+intersection p5 p4 p4mov
+setcol p5 0.72 0 0.84
+draw intersec.png p4 p4mov p5
+intersection circle p4 p4rot
+vertices circle
+perimeter circle 
+area circle
+union circle p4
+draw circle.png circle     

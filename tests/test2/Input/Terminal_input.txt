@@ -1,0 +1,39 @@
+polygon p1 -1 -2 -1 0 -1 2 1 -2 1 0 1 2
+polygon p2 -2 -1 0 -1 2 -1 -2 1 0 1 2 1
+print p1
+vertices p2
+setcol p1 0 0.55 0.22
+setcol p2 0.3 0.1 0.12
+polygon p3 0 0 1 1 2 2 3 3 0 5
+print p3
+area p3
+polygon p4 0 0
+union p4 p1
+print p4
+intersection p4 p2
+setcol p4 0.7 0.65 0.34 
+draw image.png p1 p2 p4
+polygon vertical 0 0 0 10
+intersection p5 vertical p1
+print p5
+centroid p5
+load parallel.txt
+list
+intersection null parallel1 parallel2
+print null 
+union parallelogram parallel1 parallel2
+print parallelogram
+bbox rectangle parallel3 parallel4
+draw image3.png parallel3 parallel4
+intersection null2 parallel3 parallel4
+vertices null2
+union p6 parallel3 parallel4
+setcol p6 0.2 0.3 0.1
+draw image2.png rectangle p6
+polygon triangle1 -5 0 0 0 0 5
+polygon triangle2 5 0 0 0 0 5
+setcol triangle1 1 0 0
+setcol triangle2 0 1 0
+intersection line triangle1 triangle2
+setcol line 1 1 0
+draw line_intersection.png triangle1 triangle2 line

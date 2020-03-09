@@ -1,0 +1,27 @@
+polygon degenerate1 0 0 0 0 0 0 0 0 0 0
+polygon degenerate2 0 0 0 1 0 2 0 3 
+print degenerate1
+print degenerate2
+polygon normal 0 0 1 1 5 2 8 1 10 0
+intersection point degenerate1 normal
+print point 
+polygon empty
+intersection empty2 empty normal
+print empty2
+vertices empty
+inside empty normal
+inside degenerate1 normal
+setcol normal 1 1 0
+setcol point 0 1 1
+draw pixels.png normal point empty
+union point2 empty point   
+print point2
+polygon epsilon 0.000000000001 0.000000000001
+polygon more_epsilon 0.00000000001 0.00000000001
+inside epsilon point
+inside more_epsilon point
+union fakezeroes more_epsilon point
+union good epsilon point
+print good 
+print fakezeroes
+# it has to 0.000 0.000 points because we only print three decimals, but they differ 

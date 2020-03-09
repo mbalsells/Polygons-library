@@ -1,0 +1,14 @@
+load p6.txt
+load p6mov.txt
+load p6rot.txt
+setcol p6 1 0 0
+setcol p6mov 0 0 1
+intersection p7 p6 p6mov
+setcol p7 0.72 0 0.84
+draw intersec2.png p6 p6mov p7
+intersection circle2 p6 p6rot
+vertices circle2
+perimeter circle2
+area circle2
+union circle2 p6
+draw circle2.png circle2     

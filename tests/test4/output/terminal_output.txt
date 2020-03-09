@@ -1,0 +1,66 @@
+#
+Error: missing parameters
+Error: unrecognized command
+Error: invalid declaration
+Error: document not found
+Error: missing parameters
+#
+ok
+Error: lacking vertices
+Error: lacking vertices
+Error: lacking vertices
+0
+Error: invalid declaration
+#
+Error: undefined identifier
+Error: missing parameters
+Error: missing parameters
+Error: invalid declaration
+Error: invalid declaration
+Error: missing parameters
+Error: lacking vertices
+ok
+Error: lacking vertices
+#
+0.000 0.000
+Error: lacking vertices
+Error: missing parameters
+Error: invalid declaration
+Error: invalid declaration
+Error: missing parameters
+Error: undefined identifier
+#
+ok
+Error: lacking vertices
+1.414
+Error: invalid declaration
+Error: invalid declaration
+Error: missing parameters
+Error: missing parameters
+#
+Error: missing parameters
+Error: missing parameters
+Error: undefined identifier
+Error: invalid declaration
+ok
+#
+Error: missing parameters
+Error: missing parameters
+Error: invalid declaration
+Error: invalid declaration
+Error: missing parameters
+Error: undefined identifier
+Error: invalid declaration
+#
+Error: undefined identifier
+Error: undefined identifier
+Error: missing parameters
+Error: missing parameters
+Error: invalid declaration
+#
+Error: invalid declaration
+Error: invalid declaration
+#
+Error: unrecognized command
+Error: unrecognized command
+Error: unrecognized command

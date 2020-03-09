@@ -1,0 +1,27 @@
+ok
+ok
+degenerate1 0.000 0.000
+degenerate2 0.000 0.000 0.000 3.000
+ok
+ok
+point 0.000 0.000
+ok
+ok
+empty2
+0
+yes
+yes
+ok
+ok
+ok
+ok
+point2 0.000 0.000
+ok
+ok
+yes
+no
+ok
+ok
+good 0.000 0.000
+fakezeroes 0.000 0.000 0.000 0.000
+#

@@ -1,0 +1,20 @@
+load reg3.txt
+load reg5.txt
+load reg10.txt
+load reg1000.txt
+polygon no_regular 0 0 5 12 6 8 10 5 5 -12 3 -2
+regular no_regular
+regular reg1000
+regular reg10
+regular reg5
+regular reg3
+in reg1000 0 0
+in reg3 0 0
+in reg3 0 1000
+in reg1000 700 700
+in reg5 700 700
+setcol reg3 1 0 0
+setcol reg5 0.8 0.2 0
+setcol reg10 1 0.65 0
+setcol reg1000 1 1 0
+fulldraw regularity.png reg1000 reg10 reg5
