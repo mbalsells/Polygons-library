@@ -10,15 +10,15 @@ Polygon Polygon::intersection (const Polygon& Q) const{
 	// intersections of edges
 
 	/*
-	* My alogirithm is based on the typical sweep line alogrithm:
-    * We have four active lines: the two leftmost edges of each polygon
-    * We check intersections within these segments and if the leftmost points are in the other polygon
-    * Then we take the minimum end point of the active lines and we consider the segment that begins there.
-    * We check if the new start point for that edge is between the lines of the other polygon (the active ones)
-    * We check the intersection between this new line and the lines of the other polygons (the active ones)
-    * We update the active line for this new one.
-    * We repeat the process till all edges have been visited (in total the algorithm is O(n))
-    */
+	    * My algorithm is based on the typical sweep line algorithm:
+	    * We have four active lines: the two leftmost edges of each polygon
+	    * We check intersections within these segments and if the leftmost points are in the other polygon
+	    * Then we take the minimum end point of the active lines and we consider the segment that begins there.
+	    * We check if the new start point for that edge is between the lines of the other polygon (the active ones)
+	    * We check the intersection between this new line and the lines of the other polygons (the active ones)
+	    * We update the active line for this new one.
+	    * We repeat the process till all edges have been visited (in total the algorithm is O(n))
+	*/
 
 
 	int n = (int) P.size(), m = Q.vertices();
