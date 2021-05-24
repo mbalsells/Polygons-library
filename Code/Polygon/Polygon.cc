@@ -29,7 +29,7 @@ double Polygon::area() const{
 	for (int i = 0; i < (int) P.size() - 1; ++i) {
 		ans += (P[i].getx()*P[i+1].gety() - P[i].gety()*P[i+1].getx());
 	}
-	ans += (P[n-1].getx()*P[0].gety() - P[n-1].gety()*P[0].getx());
+	ans += (P[P.size()-1].getx()*P[0].gety() - P[P.size()-1].gety()*P[0].getx());
 
 	return abs(ans)/2;
 }
